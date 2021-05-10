@@ -55,6 +55,13 @@ main .column button {
   border-radius: 2rem;
   border: none;
   margin-top: 4rem;
+  border: solid 3px #f2f2f2;
+}
+
+main .column button:hover {
+  background: transparent;
+  cursor: pointer;
+  color: #f2f2f2;
 }
 
 main .left {
