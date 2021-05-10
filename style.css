@@ -1,0 +1,124 @@
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: clamp(375px, 80%, 1440px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .column {
+  padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .column p {
+  line-height: 2rem;
+  padding-right: 2rem;
+}
+
+main .column button {
+  padding: .75rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 4rem;
+}
+
+main .left {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  background-color: #e38826;
+}
+
+main .left button {
+  color: #e38826;
+}
+
+main .center {
+  background-color: #006970;
+}
+
+main .center button {
+  color: #006970;
+}
+
+main .right {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  background-color: #004241;
+}
+
+main .right button {
+  color: #004241;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: .8rem;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: inherit;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    padding: 6rem 0;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .left {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .5rem;
+  }
+  body main .right {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
